@@ -35,9 +35,9 @@ ALTER TABLE Cleanser ADD CONSTRAINT cleanser_pk
 
 	
 CREATE TABLE Administrator ( -- опис адміністратора
-	trainer_id INTEGER, -- id адміністратора
-	trainer_name VARCHAR(25), -- ім'я адміністратора
-	trainer_surname VARCHAR(25), -- прізвище адміністратора
+	Administrator_id INTEGER, -- id адміністратора
+	Administrator_name VARCHAR(25), -- ім'я адміністратора
+	Administrator_surname VARCHAR(25), -- прізвище адміністратора
 	consumer_id INTEGER, -- номер клієнта
 	administrator_expirience INTEGER, -- стаж (в роках) адміністратора
     Since_work INTEGER -- наукова робота
