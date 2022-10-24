@@ -39,7 +39,7 @@ CREATE TABLE Administrator ( -- опис адміністратора
 	trainer_name VARCHAR(25), -- ім'я адміністратора
 	trainer_surname VARCHAR(25), -- прізвище адміністратора
 	consumer_id INTEGER, -- номер клієнта
-	trainer_expirience INTEGER, -- стаж (в роках) адміністратора
+	administrator_expirience INTEGER, -- стаж (в роках) адміністратора
     Since_work INTEGER -- наукова робота
 );
 
@@ -51,7 +51,7 @@ ALTER TABLE Administrator ADD CONSTRAINT administrator_pk
 	
 -- обмеження вмісту стовпчиків таблиці
 ALTER TABLE Administrator ADD CONSTRAINT Since_work
-	CHECK (plans between 1 and 50);
+	CHECK (work between 1 and 50);
 
 
 CREATE TABLE Since_work ( -- опис наукової роботи
@@ -61,13 +61,13 @@ CREATE TABLE Since_work ( -- опис наукової роботи
 );
 
 -- обмеження первинного ключа
-ALTER TABLE Training_plans ADD CONSTRAINT training_plans_pk
-	PRIMARY KEY (training_plans_id);
+ALTER TABLE Since_work ADD CONSTRAINT Since_work_pk
+	PRIMARY KEY (Since_work_id);
 	
 
 
 -- обмеження вмісту стовпчиків таблиці
-ALTER TABLE Training_plans ADD CONSTRAINT advice_range
+ALTER TABLE Since_work ADD CONSTRAINT advice_range
 	CHECK (advices>0);
 
 	
