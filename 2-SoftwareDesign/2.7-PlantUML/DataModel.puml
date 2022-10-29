@@ -1,0 +1,33 @@
+@startuml
+
+title Data model
+
+hide circle
+entity "Consumer"{
+(PK) id
+--
+name
+surname
+age
+(FK) city
+}
+
+entity "Cleanser"{
+(PK) city
+--
+date
+}
+
+entity "Administrator"{
+(PK) id
+--
+name
+(FK) surname
+expirience
+(FK) since_work
+}
+
+Consumer --{ Administrator
+Cleanser --{ Consumer
+
+@enduml
