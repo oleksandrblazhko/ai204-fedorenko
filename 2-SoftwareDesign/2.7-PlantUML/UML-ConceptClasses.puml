@@ -1,0 +1,20 @@
+@startuml
+
+title Classes - Class Diagram
+
+
+class Consumer {
+  id
+  name
+  surname
+  age
+}
+class Cleanser {
+ date
+}
+class User
+
+Consumer <|-- User
+Consumer "*" --> "1" Cleanser : activates
+
+@enduml
