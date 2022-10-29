@@ -22,9 +22,10 @@ entity "Administrator"{
 (PK) id
 --
 name
-(FK) surname
+surname
 expirience
 (FK) since_work
+(FK) id
 }
 
 Consumer --{ Administrator
