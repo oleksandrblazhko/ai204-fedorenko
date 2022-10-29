@@ -2,4 +2,4 @@
 
 
 
-https://raw.githubusercontent.com/oleksandrblazhko/ai204-fedorenko/laboratory-work-7/2-SoftwareDesign/2.7-PlantUML/DataModel.puml
+
