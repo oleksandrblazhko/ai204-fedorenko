@@ -22,7 +22,7 @@ BEGIN
 RETURN SELF.since_work_id;
 END get_since_work_id;
         
-/* get_group_of_muscules*/
+/* get_group_of_information*/
 MEMBER FUNCTION get_information
 RETURN NUMBER 
 IS
